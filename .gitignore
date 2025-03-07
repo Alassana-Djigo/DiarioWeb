@@ -1,0 +1,8 @@
+# Ignorar a pasta do virtualenv
+ll_env/
+
+# Ignorar arquivos temporários e outros
+*.pyc
+__pycache__/
+db.sqlite3
+*.log
