@@ -16,7 +16,7 @@ Se você ainda não tem o Python instalado, você pode baixá-lo [aqui](https://
 
 ### Instalando o pip e o Virtualenv
 
-1. Instale o pip (se ainda não tiver instalado):
+1. Instale o pip e p virtualenv (se ainda não os tiver instalado):
 
    ```bash
    python -m ensurepip --upgrade
@@ -26,18 +26,18 @@ Se você ainda não tem o Python instalado, você pode baixá-lo [aqui](https://
 ### Instalando o Projeto
 
 1. Clone o repositório para o seu computador:
--Entre no diretorio principal do projeto
+1.1 -Entre no diretorio principal do projeto.
 
 2. Crie e ative um ambiente virtual (recomendado):
 
-# No Windows:
+### No Windows:
 
    ```bash
    python -m venv venv
    venv\Scripts\activate
    ```
 
-# No Linux/Mac:
+### No Linux/Mac:
 
    ```bash
    python3 -m venv venv
