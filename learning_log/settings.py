@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 	#Minhas aplicaçoes
     'learning_logs',
+    'users'
 ]
 
 MIDDLEWARE = [
@@ -123,3 +124,9 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#Logout redirect
+LOGOUT_REDIRECT_URL = "/"
+
+#login redirect
+LOGIN_URL = "users/login/"

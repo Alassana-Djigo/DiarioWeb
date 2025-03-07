@@ -10,4 +10,4 @@ Antes de executar o projeto, certifique-se de ter os seguintes itens instalados:
 - **Virtualenv** (para criar um ambiente virtual isolado) 
 - **Banco de dados** (SQLite já vem embutido, mas pode ser configurado PostgreSQL/MySQL) 
 
-## **Instruções de Instalação**
+
