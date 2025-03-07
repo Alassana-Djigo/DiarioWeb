@@ -27,7 +27,7 @@ Se você ainda não tem o Python instalado, você pode baixá-lo [aqui](https://
 
 1. Clone o repositório para o seu computador:
 
-1.1 -Entre no diretorio principal do projeto.
+Entre no diretorio principal do projeto.
 
 2. Crie e ative um ambiente virtual (recomendado):
 
