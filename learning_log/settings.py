@@ -39,11 +39,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 	#Minhas aplicaçoes
     'learning_logs',
-    'users'
+    'users',
+    'django_bootstrap5'
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -130,3 +132,20 @@ LOGOUT_REDIRECT_URL = "/"
 
 #login redirect
 LOGIN_URL = "users/login/"
+
+# Configuraçoes para heroku
+import os
+import dj_database_url
+
+DATABASES = { 
+'default': dj_database_url.config(conn_max_age=600, ssl_require=True) }
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+ALLOWED_HOSTS = ['*']
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
+
+# Armazenamento de arquivos estáticos otimizado
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

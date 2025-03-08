@@ -1,0 +1,2 @@
+O Django reunira os arquvos estáticos e os colocará em
+learning_log/static
